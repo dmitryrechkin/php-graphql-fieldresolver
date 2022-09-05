@@ -1,0 +1,20 @@
+schema {
+  query: Query
+}
+
+type Query {
+  sample(message: InputData): Sample
+}
+
+type Mutation {
+  sample(message: InputData): Sample
+} 
+
+input InputData {
+  message: String!
+}
+
+type Sample {
+  id: Int!
+  message: String!
+}
